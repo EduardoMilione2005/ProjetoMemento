@@ -1,3 +1,5 @@
+package memento;
+
 public class TVMemento {
 
     private final int canal;

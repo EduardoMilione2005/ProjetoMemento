@@ -1,6 +1,7 @@
+import memento.Historico;
+import memento.TV;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TVTeste {
 
@@ -17,8 +18,8 @@ public class TVTeste {
 
         tv.restaurar(historico.getMemento(0));
 
-        assertEquals(1, tv.getCanal());
-        assertEquals(10, tv.getVolume());
+        Assertions.assertEquals(1, tv.getCanal());
+        Assertions.assertEquals(10, tv.getVolume());
     }
 
     @Test
@@ -39,7 +40,7 @@ public class TVTeste {
 
         tv.restaurar(historico.getMemento(1));
 
-        assertEquals(8, tv.getCanal());
-        assertEquals(25, tv.getVolume());
+        Assertions.assertEquals(8, tv.getCanal());
+        Assertions.assertEquals(25, tv.getVolume());
     }
 }

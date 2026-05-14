@@ -1,3 +1,5 @@
+package memento;
+
 public class TV {
 
     private int canal;
@@ -35,6 +37,6 @@ public class TV {
 
     @Override
     public String toString() {
-        return "TV {Canal=" + canal + ", Volume=" + volume + "}";
+        return "memento.TV {Canal=" + canal + ", Volume=" + volume + "}";
     }
 }

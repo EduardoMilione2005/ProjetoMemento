@@ -1,3 +1,6 @@
+import memento.Historico;
+import memento.TV;
+
 public class Main {
 
     public static void main(String[] args) {
